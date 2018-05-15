@@ -1,0 +1,43 @@
+
+ul{
+	padding-left:0;
+	margin-top:0;
+	margin-bottom:0;
+	list-style-type:none;
+	z-index:1;
+}
+
+.main>li {
+	position:relative;
+	margin-left:2px;
+	border:2px solid black;
+	display : block;
+	float:left;
+	background : rgba(161, 199, 168, 1);
+	width:120px;
+	text-align:center;	
+	line-height:46px;
+	}
+.sub>li {
+	position:relative;
+	display:block;
+	border:1px solid black;
+	background : rgba(161, 199, 168, 1);
+	line-height:28px;
+	width:120px;
+	padding:5px;	
+	}
+	
+.sub{ 
+		display:none;		
+}
+	
+.main li:hover {
+		background : rgba(80, 135, 90, 1);
+	}
+	
+.main>li:hover>ul { display:block; position:absolute; left:-2px; top:48px;}
+
+.sub>li:hover>ul { display:block; position:absolute; left:118px; top:-1px;}
+	
+
